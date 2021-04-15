@@ -1,18 +1,23 @@
-package org.basma.store.test;
+package org.basma.store;
 
-import org.basma.store.responses.UserResponse;
 import org.basma.store.services.UserService;
-import org.basma.store.services.Impl.UserServiceImpl;
-import org.basma.store.shared.dto.UserDto; 
-import org.springframework.beans.BeanUtils;
+import org.basma.store.shared.dto.UserDto;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.junit.Test;
+import org.springframework.boot.test.context.SpringBootTest;
 
-public class UserTest {
+@SpringBootTest
+public class BasmaOnlineStoreApplicationTests {
 
-	
 	@Autowired
-	UserService userService;
+	private UserService userService;
+	
+	@Test
+	void contextLoads() {
+	}
+	
+ 
+	
 	
 	@Test
 	public void testaddUser() {
@@ -29,4 +34,5 @@ public class UserTest {
 		
 		System.out.print(userDto.toString());
 	}
+	
 }
