@@ -6,7 +6,19 @@ public class UserRequest {
 	private String prenomUser;
 	private String email;
 	private String password;
+	private String roleUser;
+
  
+	public String getRoleUser() {
+		return roleUser;
+	}
+
+
+	public void setRoleUser(String roleUser) {
+		this.roleUser = roleUser;
+	}
+
+
 	public UserRequest() {
 		super();
 		// TODO Auto-generated constructor stub

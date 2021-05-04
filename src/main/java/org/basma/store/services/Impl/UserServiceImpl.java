@@ -95,8 +95,8 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public UserDto updateUser(String id, UserDto userDto) {
+		
 		UserEntity userEntity = userRepository.findByUserId(id);
-
 		if (userEntity == null)
 			throw new UsernameNotFoundException(id);
 

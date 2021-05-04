@@ -3,9 +3,21 @@ package org.basma.store.responses;
 public class UserResponse {
 	private String nomUser;
 	private String prenomUser;
-	private String email; 
+	private String email;	
+	private String roleUser;
+ 
 	 
  
+
+	public String getRoleUser() {
+		return roleUser;
+	}
+
+
+	public void setRoleUser(String roleUser) {
+		this.roleUser = roleUser;
+	}
+
 
 	public String getNomUser() {
 		return nomUser;
@@ -37,9 +49,4 @@ public class UserResponse {
 	}
 
 
- 
-
-
-	 
-	
 }

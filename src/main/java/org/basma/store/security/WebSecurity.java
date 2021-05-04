@@ -24,7 +24,7 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		
-
+//filter hasauthority("Admin")
 		http
 		    .cors().and()
 		    .csrf().disable()

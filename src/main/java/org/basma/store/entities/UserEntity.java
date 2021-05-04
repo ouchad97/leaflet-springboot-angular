@@ -19,44 +19,38 @@ public class UserEntity implements Serializable{
 	@Id
 	@GeneratedValue
 	private long id;
-	
+	//
 	@Column(nullable=false)
 	private String userId;
-
+	//
 	@Column(nullable=false, length=50)
 	private String nomUser;
-
-
+	//
 	@Column(nullable=false, length=50)
 	private String prenomUser;
-	
-	public String getPrenomUser() {
-		return prenomUser;
-	}
-
-	public void setPrenomUser(String prenomUser) {
-		this.prenomUser = prenomUser;
-	}
-
+	//
 	@Column(nullable=false, length=120, unique=true)
 	private String email;
-	
+	//
 	@Column(nullable=false) 
 	private String encyptePassword;
-	
+	//
 	@Column(nullable=true) 
 	private String emailVerificationToken;
-	
+	//
 	@Column(nullable=false) 
 	private Boolean emailVerificationStatuts;
-
+	//
+	@Column(nullable=false, length=14)
+	private String roleUser;
 	
 	
-	public UserEntity(String nomUser, String prenomUser, String email) {
+	public UserEntity(String nomUser, String prenomUser, String email, String roleUser) {
 		super();
 		this.nomUser = nomUser;
 		this.prenomUser = prenomUser;
 		this.email = email;
+		this.roleUser=roleUser;
 	}
 
 	
@@ -119,7 +113,23 @@ public class UserEntity implements Serializable{
 	public void setEmailVerificationStatuts(Boolean emailVerificationStatuts) {
 		this.emailVerificationStatuts = emailVerificationStatuts;
 	}
-	
+	public String getPrenomUser() {
+		return prenomUser;
+	}
+
+	public void setPrenomUser(String prenomUser) {
+		this.prenomUser = prenomUser;
+	}
+
+
+	public String getRoleUser() {
+		return roleUser;
+	}
+
+
+	public void setRoleUser(String roleUser) {
+		this.roleUser = roleUser;
+	}
 
 
 }

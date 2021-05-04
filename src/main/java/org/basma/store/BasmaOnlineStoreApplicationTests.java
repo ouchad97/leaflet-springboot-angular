@@ -16,22 +16,12 @@ public class BasmaOnlineStoreApplicationTests {
 	void contextLoads() {
 	}
 	
- 
-	
 	
 	@Test
 	public void testaddUser() {
 		
-		UserDto userDto = new UserDto("NomTest", "PrenomTest", "EmailTest@email.com","aaa");
+		UserDto userDto = new UserDto("test", "test", "test@email.com", "test", "Admin");
 		userService.createUser(userDto);
-		
-		
-//		UserDto userDto = new UserDto("NomTest", "PrenomTest", "EmailTest@email.com","aaa"); 
-//		UserDto createUser = userService.createUser(userDto);
-//		UserResponse userResponse = new UserResponse();
-//		BeanUtils.copyProperties(createUser, userResponse);
-
-		
 		System.out.print(userDto.toString());
 	}
 	

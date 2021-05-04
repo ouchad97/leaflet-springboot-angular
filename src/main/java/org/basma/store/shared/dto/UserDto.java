@@ -18,15 +18,17 @@ public class UserDto implements Serializable {
 	private String encyptePassword;
 	private String emailVerificationToken;
 	private Boolean emailVerificationStatuts=false;
+	private String roleUser;
 	
  
  
-	public UserDto(String nomUser, String prenomUser, String email, String password) {
+	public UserDto(String nomUser, String prenomUser, String email, String password, String roleUser) {
 		super();
 		this.nomUser = nomUser;
 		this.prenomUser = prenomUser;
 		this.email = email;
 		this.password = password;
+		this.roleUser=roleUser;
 	}
 	public UserDto() {
 		super();
@@ -89,6 +91,12 @@ public class UserDto implements Serializable {
 	}
 	public void setPassword(String password) {
 		this.password = password;
+	}
+	public String getRoleUser() {
+		return roleUser;
+	}
+	public void setRoleUser(String roleUser) {
+		this.roleUser = roleUser;
 	}
 	
 	
