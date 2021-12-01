@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.basma.store.test.UserTest">
+      <class name="org.number.store.test.NumberTest">
         <methods>
           <include name="testaddUser"/>
         </methods>
-      </class> <!-- org.basma.store.test.UserTest -->
+      </class> <!-- org.number.store.test.NumberTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
