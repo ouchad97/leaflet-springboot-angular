@@ -1,4 +1,4 @@
-package org.number.store;
+package org.rim.polyline;
 
 
 import org.springframework.beans.BeansException;

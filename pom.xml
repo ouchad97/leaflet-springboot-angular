@@ -9,11 +9,11 @@
 		<version>2.4.4</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>org.number.store</groupId>
-	<artifactId>boutique</artifactId>
+	<groupId>org.rim.polyline</groupId>
+	<artifactId>polyline</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>boutique</name>
-	<description>boutique</description>
+	<name>polyline</name>
+	<description>polyline</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
@@ -72,12 +72,18 @@
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
+<dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-core</artifactId>
+    <version>4.1.4.Final</version>
+</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency>
+<dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-entitymanager</artifactId>
+    <version>5.2.3.Final</version>
+</dependency>
+	 
 
 		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-test -->
 		<dependency>

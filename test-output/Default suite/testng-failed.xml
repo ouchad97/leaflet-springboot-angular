@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.number.store.test.NumberTest">
+      <class name="org.rim.polyline.test.PolylineTest">
         <methods>
           <include name="testaddUser"/>
         </methods>
-      </class> <!-- org.number.store.test.NumberTest -->
+      </class> <!-- org.rim.polyline.test.PolylineTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
